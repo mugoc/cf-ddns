@@ -11,9 +11,9 @@ Key=""            # Global Key</br>
 Records_NAME=""   # 需要更新IP的域名</br>
 ```
 
-**修改完成后保存**
+修改完成后保存
 
-* 命令行下添加一行计划任务：<br>
+**命令行下添加一行计划任务：**<br>
 
 crontab -e
 ```bash
