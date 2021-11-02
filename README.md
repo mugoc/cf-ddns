@@ -13,7 +13,7 @@ Records_NAME=""   # 需要更新IP的域名</br>
 
 修改完成后保存
 
-* 命令行下添加一行计划任务：
+* 命令行下添加一行计划任务：</br>
 crontab -e
 ```bash
 */1 * * * * "/root/cf-ddns-1.sh" > /dev/null   # 此处双引号中路径为脚本路径
