@@ -11,13 +11,13 @@ Key=""            # Global Key</br>
 Records_NAME=""   # 需要更新IP的域名</br>
 ```
 
-修改完成后保存
+> 修改完成后保存
 
 * 命令行下添加一行计划任务：
-crontab -e
+> crontab -e
 ```bash
 */1 * * * * "/root/cf-ddns-1.sh" > /dev/null   # 此处双引号中路径为脚本路径
 ```
-<font size=1>计划任务每1分钟执行一次更新IP</font>
+> <font size=1>计划任务每1分钟执行一次更新IP</font>
 
 脚本默认不支持`IPV6`，如有需要，请`自行魔改`
