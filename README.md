@@ -6,9 +6,9 @@ wget https://github.com/mugoc/cf-ddns/raw/main/cf-ddns.sh && chmod +x cf-ddns.sh
 
 vi或文本编辑器修改一下参数：
 
-Zone_ID=""			# 概况中的Zone_ID
-Email=""			# CloudFlare注册邮箱
-Key=""				# Global Key
+Zone_ID=""			  # 概况中的Zone_ID
+Email=""			    # CloudFlare注册邮箱
+Key=""				    # Global Key
 Records_NAME=""		# 需要更新IP的域名
 
 修改完成后保存
@@ -16,3 +16,7 @@ Records_NAME=""		# 需要更新IP的域名
 命令行下添加一行计划任务：
 crontab -e
 */1 * * * * "/root/cf-ddns-1.sh" > /dev/null   # 此处双引号中路径为脚本路径
+
+计划任务每1分钟执行一次更新IP
+
+脚本默认不支持IPV6，如有需要，请自行魔改
