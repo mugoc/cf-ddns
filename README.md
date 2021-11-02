@@ -8,7 +8,7 @@ wget https://github.com/mugoc/cf-ddns/raw/main/cf-ddns.sh && chmod +x cf-ddns.sh
 Zone_ID=""        # 概况中的Zone_ID
 Email=""          # CloudFlare注册邮箱
 Key=""            # Global Key
-Records_NAME=""   # 需要更新IP的域名
+Records_NAME=""   # 需要更新IP的完整域名
 ```
 
 修改完成后保存
