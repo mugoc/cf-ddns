@@ -1,10 +1,10 @@
 # cf-ddns
 
-使用方法：
+<font size=2 >使用方法：</font>
 
-wget https://github.com/mugoc/cf-ddns/raw/main/cf-ddns.sh && chmod +x cf-ddns.sh
+<font size=2 >wget https://github.com/mugoc/cf-ddns/raw/main/cf-ddns.sh && chmod +x cf-ddns.sh</font>
 
-vi或文本编辑器修改一下参数：
+<font size=2 >vi或文本编辑器修改一下参数：</font>
 
 Zone_ID=""			  # 概况中的Zone_ID
 Email=""			    # CloudFlare注册邮箱
