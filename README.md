@@ -1,15 +1,15 @@
 # cf-ddns
-
-使用方法：
+</br>
+使用方法：</br>
 ```bash
 wget https://github.com/mugoc/cf-ddns/raw/main/cf-ddns.sh && chmod +x cf-ddns.sh
-```
-vi或文本编辑器修改一下参数：
-
-Zone_ID=""			  # 概况中的Zone_ID
-Email=""			    # CloudFlare注册邮箱
-Key=""				    # Global Key
-Records_NAME=""		# 需要更新IP的域名
+```</br>
+vi或文本编辑器修改一下参数：</br>
+</br>
+Zone_ID=""			  # 概况中的Zone_ID</br>
+Email=""			    # CloudFlare注册邮箱</br>
+Key=""				    # Global Key</br>
+Records_NAME=""		# 需要更新IP的域名</br>
 
 修改完成后保存
 
