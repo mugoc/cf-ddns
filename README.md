@@ -16,6 +16,6 @@ Records_NAME=""   # 需要更新IP的域名</br>
 crontab -e
 */1 * * * * "/root/cf-ddns-1.sh" > /dev/null   # 此处双引号中路径为脚本路径
 
-计划任务每1分钟执行一次更新IP
+<font size=1>我是尺寸计划任务每1分钟执行一次更新IP</font>
 
 脚本默认不支持`IPV6`，如有需要，请`自行魔改`
