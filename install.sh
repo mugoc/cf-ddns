@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo -e "\033[32m 安装所需依赖 \033[0m"
-apt install jq curl wget -y &> /dev/null 
+apt install jq curl wget -y 2>&1 > /dev/null 
 yum install jq curl wget -y &> /dev/null 
 echo -e "\033[32m 安装完成 \033[0m"
 wget https://github.com/mugoc/cf-ddns/raw/main/cf-ddns-1.sh 
