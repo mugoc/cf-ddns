@@ -1,4 +1,10 @@
-# cf-ddns
+# cf-ddns-1
+**使用方法：**
+```bash
+wget https://github.com/mugoc/cf-ddns/raw/main/install.sh && chmod +x install.sh && bash install.sh
+```
+
+# cf-ddns-1-old
 **使用方法：**
 ```bash
 wget https://github.com/mugoc/cf-ddns/raw/main/cf-ddns-1-old.sh && chmod +x cf-ddns-1-old.sh
