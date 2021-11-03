@@ -26,15 +26,22 @@ Records_ID=$(curl -s -X GET "https://api.cloudflare.com/client/v4/zones/${Zone_I
 # Records_ID=""		# 上述操作返回的ID
 
 IPV4=$(curl -s ip.sb)
+Remote_IP=$(host -t a  $Records_NAME|grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}"|head -1)
 echo "当前IP：${IPV4}"
+echo "域名IP：${Remote_IP}"
 
-if [ -f $ip_file ]; then
-    old_ip=$(cat $ip_file)
-        if [[ ${IPV4} == ${old_ip} ]]; then
-	        echo "IP has not changed."
-	        exit 0
-	fi
+if [[ ${IPV4} == ${Remote_IP} ]]; then
+	echo "IP has not changed."
+	exit 0
 fi
+
+#if [ -f $ip_file ]; then
+#    old_ip=$(cat $ip_file)
+#        if [[ ${IPV4} == ${old_ip} ]]; then
+#	        echo "IP has not changed."
+#	        exit 0
+#	fi
+#fi
 
 updata=$(curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/${Zone_ID}/dns_records/${Records_ID}" \
      -H "X-Auth-Email: ${Email}" \
