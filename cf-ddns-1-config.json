@@ -1,7 +1,7 @@
 {
-  "Zone_ID": "",		# root域名ID
-  "Email": "",			# cf注册邮件
-  "Key": "",			# Global Key
-  "Records_NAME": ""		# 更新IP的域名
+  "Zone_ID": "",		
+  "Email": "",		
+  "Key": "",			
+  "Records_NAME": ""		
 }
 
